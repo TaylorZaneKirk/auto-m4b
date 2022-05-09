@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  auto-m4b:
+    image: seanap/auto-m4b
+    container_name: auto-m4b
+    volumes:
+      - /path/to/config:/config
+      - ndrive:/temp
+volumes:
+  ndrive:
+    driver: local
+    driver_opts:
+      type: cifs
+      o: username=Taylor,password=8921,rw
+      device: "\\\\192.168.1.26\\n"
