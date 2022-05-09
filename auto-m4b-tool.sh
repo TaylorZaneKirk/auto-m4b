@@ -2,7 +2,7 @@
 # set m to 1
 m=1
 # variable defenition
-CPUcores=$(nproc --all)
+CPUcores=8
 inputfolder="/temp/merge/"
 outputfolder="/temp/Audiobooks/"
 originalfolder="/temp/recentlyadded/"
@@ -19,8 +19,8 @@ cd "$inputfolder" || return
 while [ $m -ge 0 ]; do
 
 	#copy files to backup destination
-	echo "Making a backup of the whole $originalfolder "
-	cp -Ru "$originalfolder"* $backupfolder
+	#echo "Making a backup of the whole $originalfolder "
+	#cp -Ru "$originalfolder"* $backupfolder
 
 	#make sure all single file mp3's & m4b's are in their own folder
 	echo "Making sure all books are in their own folder"
