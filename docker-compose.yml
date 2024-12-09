@@ -1,8 +1,8 @@
 version: '3.7'
 services:
   auto-m4b:
-    image: taylorzanekirk/auto-m4b
-    container_name: auto-m4b-test
+    image: seanap/auto-m4b
+    container_name: auto-m4b
     volumes:
       - /path/to/config:/config
       - ndrive:/temp
