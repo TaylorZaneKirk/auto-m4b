@@ -126,8 +126,8 @@ RUN echo "---- INSTALL M4B-TOOL ----" && \
 		mkdir -p /tmp/m4b-tool &&  mkdir -p /usr/local/bin/m4b-tool && \
 		tar xzf /tmp/m4b-tool.tar.gz -C /tmp/m4b-tool \
 		&& mv /tmp/m4b-tool/* /usr/local/bin/m4b-tool \
-		&& chmod +x /usr/local/bin/m4b-tool/
-	fi
+		&& chmod +x /usr/local/bin/m4b-tool/ ; \
+	fi 
     
 #    && if [ ! -f /tmp/m4b-tool.phar ]; then \
 #            wget "${M4B_TOOL_DOWNLOAD_LINK}" -O /tmp/m4b-tool.tar.gz && \
